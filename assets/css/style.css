@@ -257,6 +257,19 @@ body { background: var(--white); }
   .logo img {
     width: 190px;
   }
+  
+}
+@media (max-width: 768px) {
+  .navbar-list {
+    display: flex;
+    flex-direction: column; /* This ensures vertical alignment */
+    align-items: center; /* Centers the menu items */
+  }
+
+  .navbar-list li {
+    width: 100%; /* Makes each menu item take full width */
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -362,16 +375,7 @@ body { background: var(--white); }
   transition: var(--transition);
   text-transform: capitalize;
 }
-.navbar-list {
-  display: flex;
-  flex-direction: column; /* This ensures vertical alignment */
-  align-items: center; /* Centers the menu items */
-}
 
-.navbar-list li {
-  width: 100%; /* Makes each menu item take full width */
-  text-align: center;
-}
 .navbar-link:is(:hover, :focus) { color: var(--bright-navy-blue); }
 
 .overlay {
